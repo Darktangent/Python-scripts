@@ -1,0 +1,16 @@
+from PIL import Image, ImageFilter
+
+img = Image.open('./astro.jpg')
+print(img.size)
+img.thumbnail((400, 400))
+img.save('thumbnail.jpg')
+# filtered_img=img.filter(ImageFilter.SMOOTH)
+# filtered_img = img.convert('L')
+# print(dir(img.mode))
+# filtered_img.rotate(90)
+# box = (100, 100, 400, 400)
+# region = filtered_img.crop(box)
+# region.save("crop.png", 'png')
+# resize = filtered_img.resize((300, 300))
+# resize.save("resize.jpg", 'png')
+# filtered_img.show()
